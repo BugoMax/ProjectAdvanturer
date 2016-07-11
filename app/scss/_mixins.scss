@@ -19,3 +19,20 @@
   width: 1200px;
   margin: 0 auto;
 }
+
+@mixin a-progress {
+  content: "";
+  position: absolute;
+  height: 33px;
+  margin-top: -32px;
+  background-color:  #f8f8f8;
+}
+
+@mixin line {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $light-gray;
+}
