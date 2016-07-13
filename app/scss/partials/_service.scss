@@ -1,0 +1,88 @@
+@import "variables";
+@import "mixins";
+
+.service {
+	@include middle_position;
+	margin-top: 60px;
+}
+
+.service:before {
+	@include line;
+}
+
+.service:after {
+	@include line;
+	margin-top: 50px;
+}
+
+.service__caption {
+	@include roboto;
+	padding-top: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2.5rem;  // 40px / 16
+	color: $gray;
+}
+
+.service__card {
+	display: inline-block;
+	width: 27.75%;  // 333px / 1200
+	height: 460px;
+	margin-top: 25px;
+	margin-right: 55px;
+	padding: 30px 23px;
+	border: 1px solid $light-gray;
+	border-radius: 10px;
+	background-color: #ffffff;
+	transition: all ease-out 0.5s;
+}
+
+.service__card:hover {
+	background-color: $gray;
+}
+
+.service__card>.fa-cog {
+	display: block;
+	margin-bottom: 40px;
+	text-align: center;
+	color: $gray;
+}
+
+.service__card>.fa-toggle-on {
+	@extend .fa-cog;
+	transform: rotate(-50deg);
+}
+
+.service__card>.fa-plug {
+	@extend .fa-cog;
+}
+
+.service__card_caption {
+	@include roboto;
+	text-transform: uppercase;
+	color: $gray;
+	font-size: 1.375rem;  // 22px / 16
+	font-weight: bold;
+}
+
+.service__card_text {
+	@include roboto;
+	color: $light-gray;
+	font-size: 1.125rem;   // 18px / 16
+}
+
+.service__card_link {
+	@include link_btn;
+	@include roboto;
+	display: block;
+	width: 155px;
+	height: 52px;
+	margin: 0 auto;
+	margin-top: 30px;
+	text-align: center;
+	line-height: 50px;
+	background-color: $pink;
+	color: #ffffff;
+	font-size: 1rem; // 16px / 16
+}

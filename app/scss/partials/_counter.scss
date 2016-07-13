@@ -1,0 +1,75 @@
+@import "variables";
+@import "mixins";
+
+.counter {
+	width: 100%;
+	height: 380px;
+	margin-top: 100px;
+	background: url('../images/count_bg.png');
+	background-repeat: no-repeat;
+	background-position: 100% 80%;
+}
+
+.counter:after {
+	@include line;
+	margin-top: 120px;
+}
+
+.counter__cards {
+	@include middle_position;
+}
+
+.counter__cards:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 380px;
+	left: 0;
+}
+
+.counter__card {
+	display: inline-block;
+	width: 270px;
+	height: 250px;
+	margin-top: 60px;
+	margin-right: 20px;
+	z-index: 10;
+	background-color: fade-out($pink, .4);
+}
+
+.counter__card>.fa-heart {
+	display: block;
+	margin-top: 45px;
+	text-align: center;
+	color: #ffffff;
+}
+
+.counter__card>.fa-check {
+	@extend .fa-heart;
+}
+
+.counter__card>.fa-refresh {
+	@extend .fa-heart;
+}
+
+.counter__card>.fa-beer {
+	@extend .fa-heart;
+}
+
+.counter__card_caption {
+	@include roboto;
+	margin-top: 20px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 2.5rem; // 40px / 16
+}
+
+.counter__card_text {
+	@include roboto;
+	margin-top: -10px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: #ffffff;
+	font-size: 0.875rem; // 14px / 16
+}

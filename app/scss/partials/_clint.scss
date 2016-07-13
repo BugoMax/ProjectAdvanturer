@@ -1,0 +1,68 @@
+@import "variables";
+@import "mixins";
+
+.clint {
+	@include middle_position;
+	margin-top: 100px;
+}
+
+.clint:after {
+	@include line;
+	margin-top: 50px;
+}
+
+.clint__caption {
+	@include roboto;
+	text-align: center;
+	text-transform: uppercase;
+	color: $gray;
+	font-size: 2.5rem; // 40px / 16
+}
+
+.clint__companies {
+	text-align: center;
+}
+
+.clint__company {
+	display: inline-block;
+	margin-right: 80px;
+}
+
+.clint__company_text {
+	color: $gray;
+	font-size: 1.5rem; // 24px / 16
+}
+
+.clint__company_graphicriver:before {
+	content: "";
+	position: absolute;
+	margin-top: 25px;
+	margin-left: -100px;
+	width: 38px;
+	height: 41px;
+	background: url('../images/sprite/spritesheet.png');
+	background-position: -15px -15px;
+}
+
+.clint__company_themeforest:before {
+	@extend .clint__company_graphicriver;
+	margin-left: -90px;
+	background-position: -83px -15px;
+}
+
+.clint__company_audiojungle:before {
+	@extend .clint__company_graphicriver;
+	margin-left: -90px;
+	background-position: -83px -72px;
+}
+
+.clint__company_codecanyon:before {
+	@extend .clint__company_graphicriver;
+	background-position: -140px -15px;
+}
+
+.clint__company_activeden:before {
+	@extend .clint__company_graphicriver;
+	margin-left: -80px;
+	background-position: -143px -72px;
+}

@@ -1,0 +1,164 @@
+@import "variables";
+@import "mixins";
+
+.about {
+	@include middle_position;
+}
+
+.about:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	left: 0;
+	margin-top: -20px;
+	background-color:  $light-gray;
+}
+
+.about__caption {
+	@include roboto;
+	margin-top: 60px;
+	text-align: center;
+	color: $gray;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.about__text {
+	@include roboto;
+	width: 67.5%; // 810px / 1200
+	margin: 50px auto;
+	text-align: center;
+	color: $gray-text;
+	font-size: 18px;
+}
+
+.about__statistics {
+	display: block;
+	width: 100%;
+	height: 500px;
+}
+
+.about__services {
+	float: left;
+  width: 48.33333333333333%; //  580px / 1200
+  height: 340px;
+}
+
+.services__cell_link {
+	display: block;
+	width: 100%;
+	height: 60px;
+	margin-bottom: 15px;
+	padding: 20px;
+	border: 1px solid #afafaf;
+	border-radius: 4px;
+	background-color: $gray;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1rem; // 16px / 16
+}
+
+.services__cell_link-plus {
+	float: right;
+	width: 27px;
+	height: 27px;
+	margin-top: -2px;
+	line-height: 27px;
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: 0 0 0 4px #6a6e72;
+	background-color: $light-gray;
+  font-size: 1.125rem;  // 18px / 16
+}
+
+.services__cell_link-plus:after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 10px;
+	margin-top: 8px;
+	margin-left: 5px;
+	background-color: $light-gray;
+}
+
+.services__cell_link-plus:before {
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 60px;
+	margin-left: -25px;
+	margin-top: -18px;
+	background-color: $light-gray;
+}
+
+.services__cell_text {
+	width: 100%;
+	height: 145px;
+	margin-top: -15px;
+	padding-left: 25px;
+	padding-top: 30px;
+	padding-right: 60px;
+	border: 1px solid $light-gray;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+}
+
+.about__progress {
+	width: 45%;  // 540px / 1200
+	height: 340px;
+	float: right;
+}
+
+.progress__line {
+	width: 100%;
+	height: 35px;
+	margin-bottom: 30px;
+	padding-left: 20px;
+	line-height: 0;
+	border-radius: 4px;
+	border: 1px solid $light-gray;
+	background-color: $pink;
+	color: #ffffff;
+}
+
+.progress__line.progress-80:after {
+	content: "";
+	position: absolute;
+	height: 33px;
+	width: 110px;
+	margin-top: -32px;
+	margin-left: 408px;
+	background-color:  #f8f8f8; 
+}
+
+.progress__line.progress-60:after {
+	@include a-progress;
+	width: 210px;
+	margin-left: 308px;
+}
+
+.progress__line.progress-75:after {
+	@include a-progress;
+	width: 160px;
+	margin-left: 358px;
+}
+
+.progress__line.progress-90:after {
+	@include a-progress;
+	width: 50px;
+	margin-left: 468px;
+}
+
+.progress__line.progress-50:after {
+	@include a-progress;
+	width: 260px;
+	margin-left: 258px;
+}
+
+.progress__line.progress-85:after {
+	@include a-progress;
+	width: 90px;
+	margin-left: 428px;
+}

@@ -1,0 +1,127 @@
+@import "variables";
+@import "mixins";
+
+.main-header {
+	@include middle_position;
+	height: 82px;
+}
+
+.main-header__logo {
+	float: left;
+	width: 54.16666666666667%; // 650 / 1200
+	height: 82px;
+	line-height: 30px;
+}
+
+.logo__link {
+	@include link_btn;
+}
+
+.logo__title {
+	@include ptsans;
+	font-size: 2.125rem;
+	color: $pink;
+}
+
+.header__main-nav {
+	float: right;
+	width: 45.83333333333333%;  // 550 / 1200
+	height: 82px;
+	margin-bottom: 0;
+}
+
+.main-nav__link.main-nav__link_active {
+	color: $pink;
+}
+
+.main-nav__link {
+	@include link_btn;
+	margin-right: 30px;
+	line-height: 80px;
+	color: $gray;
+	font-size: 0.875rem; // 14px / 16
+}
+
+.main-nav__search {
+	color: $gray;
+	font-size: 25px;
+}
+
+.main-slider {
+	position: relative;
+	width: 100%;
+	height: 785px;
+	overflow: hidden;
+	background: url('/images/slider.png') no-repeat;
+	color: #ffffff;
+}
+
+.main-sliderr__nextbutton .fa-angle-left, .main-slider__prevbutton .fa-angle-right {
+	position: absolute;
+	top: 350px;
+	width: 60px;
+	height: 60px;
+	line-height: 55px;
+	text-align: center;
+	color: #515151;
+	border-radius: 50%;
+	background-color: rgba(4, 4, 4, 8);
+	transition: all ease-out 0.5s;
+}
+
+.main-sliderr__nextbutton .fa-angle-left {
+	left: 80px;
+	padding-right: 5px;
+}
+
+.main-slider__prevbutton .fa-angle-right {
+	right: 80px;
+	padding-left: 5px;
+}
+
+.main-sliderr__nextbutton .fa-angle-left:hover, .main-slider__prevbutton .fa-angle-right:hover {
+	background-color: #e4e5e5;
+}
+
+.main-slider__content {
+	width: auto;
+	height: 100%;
+}
+
+.main-slider__caption {
+	@include ptsans;
+	position: relative;
+	height: 100px;
+	line-height: 390px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 5.625rem;  // 90px / 16
+	letter-spacing: 15px;
+}
+
+.main-slider__text {
+	@include ptsans;
+	position: relative;
+	height: 60px;
+	line-height: 190px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+  font-size: 0.875rem;  // 14 / 16
+  letter-spacing: 6px;
+}
+
+.main-slider__link {
+	@include link_btn;
+	@include roboto;
+	display: block;
+	width: 150px;
+	height: 50px;
+	margin: 115px auto;
+	padding-top: 15px;
+	text-align: center;
+	background-color: $pink;
+	color: #ffffff;
+	font-size: 1rem; // 16px / 16
+}

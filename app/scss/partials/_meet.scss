@@ -1,0 +1,142 @@
+@import "variables";
+@import "mixins";
+
+.meet {
+	@include middle_position;
+	margin-top: 100px;
+}
+
+.meet:after {
+	@include line;
+	margin-top: 50px;
+}
+
+.meet__caption {
+	@include roboto;
+	text-align: center;
+	color: $gray;
+	text-transform: uppercase;
+	font-size: 2.5rem;  // 40px / 16
+}
+
+.meet__text {
+	@include roboto;
+	margin: 0 auto;
+	width: 59.16666666666667%; // 710px / 1200
+	text-align: center;
+	color: $gray;
+	font-size: 1.125rem;  // 18px / 16
+}
+
+.meet__cards {
+	margin-top: 50px;
+}
+
+.meet__card {
+	display: inline-block;
+	width: 270px;
+	height: 300px;
+	margin-right: 20px;
+	overflow: hidden;
+	transition: all ease-out 0.5s;
+}
+
+.meet__card_light {
+	opacity: .5;
+}
+
+.meet__card_info-cell-1 {
+	position: relative;
+	display: none;
+	top: -232px;
+	width: 100%;
+	height: 100px;
+	background-color: $pink;
+}
+
+.meet__card:hover .meet__card_info-cell-1 {
+	display: block;
+}
+
+.meet__card:hover .meet__card_light {
+	opacity: 1;
+}
+
+.meet__card_info-cell-2 {
+	@extend .meet__card_info-cell-1;
+	top: -334px;
+}
+
+.meet__card_info-cell-3 {
+	@extend .meet__card_info-cell-1;
+	top: -279px;
+}
+
+.meet__card_info-cell-4 {
+	@extend .meet__card_info-cell-1;
+	top: -362px;
+}
+
+.meet__card_info-caption {
+	@include roboto;
+	padding-top: 5px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 1.5625rem; // 25px / 16
+}
+
+.meet__card_info-text {
+	@include roboto;
+	margin-top: -20px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 1.125rem; // 18px / 16
+}
+
+.meet__card_info-social {
+	margin-top: -9px;
+	text-align: center;
+	& .fa-facebook {
+		color: #ffffff;
+		margin-right: 7px;
+		transition: all ease-out 0.5s;
+	}
+	& .fa-twitter {
+		color: #ffffff;
+		margin-right: 7px;
+		transition: all ease-out 0.5s;
+	}
+	& .fa-pinterest-p {
+		color: #ffffff;
+		margin-right: 7px;
+		transition: all ease-out 0.5s;
+	}
+	& .fa-dribbble {
+		color: #ffffff;
+		margin-right: 7px;
+		transition: all ease-out 0.5s;
+	}
+	& .fa-behance {
+		color: #ffffff;
+		margin-right: 7px;
+		transition: all ease-out 0.5s;
+	}
+}
+
+.meet__card_info-social {
+	& .fa-facebook:hover {
+		color: #000000;
+	}
+	& .fa-twitter:hover {
+		color: #000000;
+	}
+	& .fa-pinterest-p:hover {
+		color: #000000;
+	}
+	& .fa-dribbble:hover {
+		color: #000000;
+	}
+	& .fa-behance:hover {
+		color: #000000;
+	}
+}

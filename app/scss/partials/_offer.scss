@@ -1,0 +1,72 @@
+@import "variables";
+@import "mixins";
+
+.offer {
+	@include middle_position;
+	margin-top: 100px;
+}
+
+.offer:before {
+	@include line;
+	margin-top: -50px;
+}
+
+.offer:after {
+	@include line;
+	margin-top: 200px;
+}
+
+.offer__caption {
+	@include roboto;
+	text-transform: uppercase;
+	text-align: center;
+	color: $gray;
+	font-weight: bold;
+	font-size: 2.5rem;  // 40px / 16
+}
+
+.offer__card {
+	display: inline-block;
+	width: 43.33333333333333%;  // 520px / 1200
+	margin-right: 75px;
+	margin-bottom: 55px;
+}
+
+.offer__card>.fa-cloud-download {
+	display: block;
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin-top: 20px;
+	text-align: center;
+	line-height: 80px;
+	background-color: $pink;
+	color: #ffffff;
+}
+
+.offer__card>.fa-suitcase {
+	@extend .fa-cloud-download;
+}
+
+.offer__card>.fa-area-chart {
+	@extend .fa-cloud-download;
+}
+
+.offer__card>.fa-shopping-basket {
+	@extend .fa-cloud-download;
+}
+
+.offer__card_caption {
+	@include roboto;
+	margin-left: 110px;
+	text-transform: uppercase;
+	color: $gray;
+	font-size: 1.5625rem;  // 25px / 16
+}
+
+.offer__card_text {
+	@include roboto;
+	margin-left: 110px;
+	color: $light-gray;
+	font-size: 1.125rem;  // 18px / 16
+}
