@@ -21,8 +21,8 @@
 
 .meet__text {
 	@include roboto;
-	margin: 0 auto;
 	width: 59.16666666666667%; // 710px / 1200
+	margin: 0 auto;
 	text-align: center;
 	color: $gray;
 	font-size: 1.125rem;  // 18px / 16
@@ -38,11 +38,26 @@
 	height: 300px;
 	margin-right: 20px;
 	overflow: hidden;
-	transition: all ease-out 0.5s;
+}
+
+.meet__card_info {
+	width: 100%;
+	height: 100;
+	z-index: 10;
+	background-color: rgba(2, 2, 2, 5);
+}
+
+.meet__card_info-img {
+	transition: all ease-out 0.3s;
+}
+
+.meet__card_info-img:hover {
+	opacity: .5;
 }
 
 .meet__card_light {
 	opacity: .5;
+	transition: all ease-out 0.3s;
 }
 
 .meet__card_info-cell-1 {

@@ -24,7 +24,6 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: #ffffff;
-	font-weight: bold;
 	font-size: 2.5rem; // 40px / 16
 }
 
@@ -45,8 +44,14 @@
 	margin: 0 auto;
 	margin-top: 30px;
 	text-align: center;
-	line-height: 50px;
+	line-height: 53px;
 	color: #ffffff;
 	background-color: $pink;
 	font-size: 1rem; // 16px / 16
+	@include transition;
+}
+
+.join__link:hover {
+	border-radius: 4px;
+	transform: scale(1.02);
 }

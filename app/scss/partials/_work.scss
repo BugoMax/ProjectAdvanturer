@@ -39,8 +39,16 @@
 	font-size: 1rem; // 16px / 16
 }
 
+.work__cards_choose:hover {
+	color: lighten($pink, 20%);
+}
+
 .work__cards_choose-active {
+	@include link_btn;
+	margin-right: 30px;
 	color: $pink;
+	text-align: center;
+	font-size: 1rem; // 16px / 16
 }
 
 .work__card {

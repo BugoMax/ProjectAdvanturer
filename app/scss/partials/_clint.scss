@@ -21,11 +21,12 @@
 
 .clint__companies {
 	text-align: center;
+	margin-left: 100px;
 }
 
 .clint__company {
 	display: inline-block;
-	margin-right: 80px;
+	margin-right: 100px;
 }
 
 .clint__company_text {
@@ -34,12 +35,11 @@
 }
 
 .clint__company_graphicriver:before {
-	content: "";
-	position: absolute;
-	margin-top: 25px;
-	margin-left: -100px;
+	@include after-before;
 	width: 38px;
 	height: 41px;
+	margin-top: 25px;
+	margin-left: -100px;
 	background: url('../images/sprite/spritesheet.png');
 	background-position: -15px -15px;
 }

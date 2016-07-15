@@ -16,7 +16,6 @@
 	text-align: center;
 	text-transform: uppercase;
 	color: $gray;
-	font-weight: bold;
 	font-size: 2.5rem;  // 40px / 16  
 }
 
@@ -27,21 +26,21 @@
 }
 
 .reviews__card_img-wrap {
+	float: left;
 	width: 130px;
 	height: 130px;
 	margin-right: 33px;
 	border-radius: 50%;
 	overflow: hidden;
-	float: left;
 }
 
 .reviews__card_img-wrap_2 {
+	float: left;
 	width: 130px;
 	height: 130px;
 	margin-right: 33px;
 	border-radius: 50%;
 	overflow: hidden;
-	float: left;
 	background: url('../images/castumer_2.png');
 	background-position: 80% 20%;
 	background-repeat: no-repeat;
@@ -53,7 +52,6 @@
 	text-transform: uppercase;
 	color: $gray;
   font-size: 1.5625rem;  // 25px / 16
-  font-weight: bold;
 }
 
 .cutomer__reviews_card-prof {
@@ -62,7 +60,6 @@
 	text-transform: uppercase;
 	color: $pink;
   font-size: 0.875rem;  // 14px / 16
-  font-weight: bold;
 }
 
 .cutomer__reviews_card-text {
@@ -78,9 +75,9 @@
 
 .cutomer__reviews_wrap-checkbox {
 	display: inline-block;
-	margin-right: 10px;
 	width: 15px;
 	height: 15px;
+	margin-right: 10px;
 	border-radius: 50%;
 	background-color: $gray;
 }

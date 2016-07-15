@@ -6,13 +6,8 @@
 }
 
 .about:after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 1px;
-	left: 0;
+	@include line;
 	margin-top: -20px;
-	background-color:  $light-gray;
 }
 
 .about__caption {
@@ -21,8 +16,7 @@
 	text-align: center;
 	color: $gray;
 	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 40px;
+	font-size: 2.5rem;  // 40px / 16
 }
 
 .about__text {
@@ -31,19 +25,20 @@
 	margin: 50px auto;
 	text-align: center;
 	color: $gray-text;
-	font-size: 18px;
+	font-size: 1.125rem;  // 18px / 16
 }
 
 .about__statistics {
 	display: block;
 	width: 100%;
-	height: 500px;
+	min-height: 550px;
 }
 
 .about__services {
 	float: left;
   width: 48.33333333333333%; //  580px / 1200
-  height: 340px;
+  min-height: 340px;
+  overflow: hidden;
 }
 
 .services__cell_link {
@@ -74,8 +69,7 @@
 }
 
 .services__cell_link-plus:after {
-	content: "";
-	position: absolute;
+	@include after-before;
 	width: 25px;
 	height: 10px;
 	margin-top: 8px;
@@ -84,8 +78,7 @@
 }
 
 .services__cell_link-plus:before {
-	content: "";
-	position: absolute;
+	@include after-before;
 	width: 2px;
 	height: 60px;
 	margin-left: -25px;
@@ -93,12 +86,14 @@
 	background-color: $light-gray;
 }
 
+
+
 .services__cell_text {
 	width: 100%;
-	height: 145px;
+	height: 100px;
 	margin-top: -15px;
 	padding-left: 25px;
-	padding-top: 30px;
+	padding-top: 15px;
 	padding-right: 60px;
 	border: 1px solid $light-gray;
 	border-radius: 4px;
@@ -106,9 +101,9 @@
 }
 
 .about__progress {
+	float: right;
 	width: 45%;  // 540px / 1200
 	height: 340px;
-	float: right;
 }
 
 .progress__line {
@@ -124,10 +119,9 @@
 }
 
 .progress__line.progress-80:after {
-	content: "";
-	position: absolute;
-	height: 33px;
+	@include after-before;
 	width: 110px;
+	height: 33px;
 	margin-top: -32px;
 	margin-left: 408px;
 	background-color:  #f8f8f8; 

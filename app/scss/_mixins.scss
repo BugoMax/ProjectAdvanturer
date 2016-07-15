@@ -36,3 +36,12 @@
   height: 1px;
   background-color: $light-gray;
 }
+
+@mixin after-before {
+  content: "";
+  position: absolute;
+}
+
+@mixin transition {
+  transition: all ease-out 0.5s;
+}

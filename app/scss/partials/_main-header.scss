@@ -19,8 +19,8 @@
 
 .logo__title {
 	@include ptsans;
-	font-size: 2.125rem;
 	color: $pink;
+	font-size: 2.125rem;
 }
 
 .header__main-nav {
@@ -30,8 +30,12 @@
 	margin-bottom: 0;
 }
 
-.main-nav__link.main-nav__link_active {
+.main-nav__link_active {
+	@include link_btn;
+	margin-right: 30px;
+	line-height: 80px;
 	color: $pink;
+	font-size: 0.875rem; // 14px / 16
 }
 
 .main-nav__link {
@@ -40,11 +44,23 @@
 	line-height: 80px;
 	color: $gray;
 	font-size: 0.875rem; // 14px / 16
+	transition: all ease-out 0.1s;
+}
+
+.main-nav__link:hover {
+  color: lighten($pink, 20%);
 }
 
 .main-nav__search {
+	display: inline-block;
 	color: $gray;
 	font-size: 25px;
+	transition: all ease-out 0.1s;
+}
+
+.main-nav__search:hover {
+	color: lighten($pink, 20%);
+	transform: scale(1.2);
 }
 
 .main-slider {
@@ -95,7 +111,6 @@
 	line-height: 390px;
 	text-align: center;
 	text-transform: uppercase;
-	font-weight: bold;
 	font-size: 5.625rem;  // 90px / 16
 	letter-spacing: 15px;
 }
@@ -107,7 +122,6 @@
 	line-height: 190px;
 	text-align: center;
 	text-transform: uppercase;
-	font-weight: bold;
   font-size: 0.875rem;  // 14 / 16
   letter-spacing: 6px;
 }

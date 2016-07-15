@@ -32,10 +32,10 @@
 }
 
 .subsrribe__form_email {
-	width: 300px;
+	width: 330px;
 	height: 50px;
-	padding: 15px;
 	margin-top: 15px;
+	padding: 15px;
 	color: $light-gray;
 	border-radius: 4px;
 	font-size: 1rem; // 16px / 16
@@ -44,16 +44,16 @@
 .subsrribe__form_send {
 	display: block;
 	position: relative;
-	bottom: 50px;
-	left: 240px;
 	width: 60px;
 	height: 50px;
+	bottom: 50px;
+	left: 270px;
 	padding-top: 9px;
 	padding-left: 15px;
 	border-radius: 4px;
 	background-color: $pink;
 	color: #ffffff;
-	font-size: 25px;
+	font-size: 1.5625rem;  //  25px / 16
 }
 
 .main-footer__widgets_wrap {
@@ -69,8 +69,8 @@
 .main-footer__widgets_about {
 	display: inline-block;
 	float: left;
+	width: 25.41666666666667%;  // 305px / 1200
 	margin-top: 40px;
-  width: 25.41666666666667%;  // 305px / 1200
 }
 
 .widgets__about_caption {
@@ -95,13 +95,19 @@
 	padding: 14px;
 	background-color: #ffffff;
 	color: $gray;
+	transition: all ease-out 0.2s;
+}
+
+.widgets__about_social-link:hover {
+	background-color: $pink;
+	color: #ffffff;
 }
 
 .main-footer__widgets_features {
 	display: inline-block;
 	float: left;
-	margin-top: 40px;
 	width: 22.91666666666667%;  // 275px / 1200
+	margin-top: 40px;
 }
 
 .widgets__features_caption {
@@ -127,8 +133,8 @@
 .main-footer__widgets_tags {
 	display: inline-block;
 	float: left;
-	margin-top: 40px;
 	width: 23.33333333333333%;  // 280px / 1200
+	margin-top: 40px;
 }
 
 .widgets__tags_caption {
@@ -154,8 +160,8 @@
 .main-footer__widgets_posts {
 	display: inline-block;
 	float: right;
-	margin-top: 40px;
 	width: 25.83333333333333%;  // 310px / 1200
+	margin-top: 40px;
 }
 
 .widgets__posts_caption {
@@ -180,8 +186,8 @@
 
 .main-footer__copyrights:before {
 	@include line;
-	margin-top: -10px;
 	height: 3px;
+	margin-top: -10px;
 }
 
 .main-footer__copyrights_wrap {

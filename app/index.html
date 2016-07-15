@@ -29,12 +29,12 @@
     			</a>
     		</div>
     		<nav class="header__main-nav">
-    			<a href="#" class="main-nav__link main-nav__link_active">Home</a>
-    			<a href="#" class="main-nav__link">About</a>
-    			<a href="#" class="main-nav__link">Service</a>
-    			<a href="#" class="main-nav__link">Contact</a>
+    			<a href="#" class="main-nav__link_active">Home</a>
+    			<a href="#about" class="main-nav__link">About</a>
+    			<a href="#service" class="main-nav__link">Service</a>
+    			<a href="#footer" class="main-nav__link">Contact</a>
     			<a href="#" class="main-nav__link">Faq</a>
-    			<a href="#" class="main-nav__link">Support</a>
+    			<a href="#customer" class="main-nav__link">Support</a>
     			<a href="#" class="main-nav__search"><i class="fa fa-search" aria-hidden="true"></i></a>
     		</nav>
     	</header>
@@ -57,21 +57,21 @@
     			<a href="#" class="main-slider__link">See more</a>
     		</div>
     	</div>
-    	<div class="about">
+    	<div class="about" id="about">
     		<h2 class="about__caption">Who we are</h2>
     		<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, est impedit officiis, ratione expedita aliquid distinctio rerum cum ab eveniet explicabo vel sint ipsa excepturi eius. </p>
     		<div class="about__statistics">
     			<div class="about__services">
     				<div class="services__cell">
-    					<a href="#d" class="services__cell_link">Lorem ipsum dolor sit amet <span class="services__cell_link-plus">+</span></a>
+    					<a href="#a" class="services__cell_link">Lorem ipsum dolor sit amet <span class="services__cell_link-plus">+</span></a>
     					<p class="services__cell_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quidem cupiditate fugit eos maiores repudiandae, dicta ea aperiam unde, animi qui, culpa velit assumenda dolor quae doloribus beatae a sint.</p>
     				</div>
     				<div class="services__cell">
-    					<a href="#d" class="services__cell_link">Lorem ipsum dolor sit amet<span class="services__cell_link-plus">+</span></a>
+    					<a href="#b" class="services__cell_link">Lorem ipsum dolor sit amet<span class="services__cell_link-plus">+</span></a>
     					<p class="services__cell_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil deserunt facilis architecto, adipisci, doloremque incidunt vero repellat possimus natus asperiores magnam rerum fuga esse ab dolore, suscipit omnis unde iusto?</p>
     				</div>
     				<div class="services__cell">
-    					<a href="#d" class="services__cell_link">Lorem ipsum dolor sit amet<span class="services__cell_link-plus">+</span></a>
+    					<a href="#c" class="services__cell_link">Lorem ipsum dolor sit amet<span class="services__cell_link-plus">+</span></a>
     					<p class="services__cell_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis a ut accusamus ullam architecto non odio, cum perspiciatis recusandae blanditiis, quisquam ea tempore dicta odit harum numquam tenetur facere? Voluptatibus.</p>
     				</div>
     			</div>
@@ -97,7 +97,7 @@
     			</div>
     		</div>
     	</div>
-    	<div class="service">
+    	<div class="service" id="service">
     		<h2 class="service__caption">Our service</h2>
     		<div class="service__cards">
     			<div class="service__card">
@@ -151,7 +151,7 @@
     			<p class="offer__card_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero totam, aut, illo itaque voluptas incidunt, repudiandae at eaque minima.</p>
     		</div>
     	</div>
-    	<div class="customer">
+    	<div class="customer" id="customer">
     		<h2 class="customer__caption">Customer reviews</h2>
     		<div class="cutomer__reviews">
     			<div class="cutomer__reviews_card">
@@ -283,7 +283,7 @@
     		<p class="work__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error vero, voluptatem placeat, ipsum itaque illo molestiae.</p>
     		<div class="work__cards">
     			<div class="work__cards_links">
-    				<a href="#" class="work__cards_choose work__cards_choose-active">All</a>
+    				<a href="#" class="work__cards_choose-active">All</a>
     				<a href="#" class="work__cards_choose">Photography</a>
     				<a href="#" class="work__cards_choose">Graphic</a>
     				<a href="#" class="work__cards_choose">Print</a>
@@ -343,7 +343,7 @@
     			<div class="clint__company clint__company_activeden"><p class="clint__company_text">activeden</p></div>
     		</div>
     	</div>
-    	<footer class="main-footer">
+    	<footer class="main-footer" id="footer">
     		<div class="main-footer__subscribe_wrap">
     			<div class="main-footer__subscribe">
     				<p class="main-footer__subscribe_text">Subscribe to our newsletter to get every Notify</p>
@@ -406,7 +406,7 @@
     			<div class="main-footer__copyrights_wrap">
     				<p class="main-footer__copyrights_text">&copy; 2015 LORAN KHA. All Rights Reserved. <span class="main-footer__copyrights_text-span">Ehsanul</span></p>
     				<div class="main-footer__copyrights_social">
-    				  <a href="#" class="copyrights__social_loink"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    					<a href="#" class="copyrights__social_loink"><i class="fa fa-facebook" aria-hidden="true"></i></a>
     					<a href="#" class="copyrights__social_loink"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
     					<a href="#" class="copyrights__social_loink"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
     					<a href="#" class="copyrights__social_loink"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
@@ -420,12 +420,57 @@
 
     	
     	<script src="libs/jquery/dist/jquery.min.js"></script>
+    	<script src="libs/jquery-smooth-scroll/jquery.smooth-scroll.min.js"></script>
     	<script>
     		$(document).ready(function() {
     			$("p.services__cell_text").hide();
     			$("a.services__cell_link").click(function(e) {
     				$(e.target).parent().children("p.services__cell_text").slideToggle();
     			});
+    		});
+
+    		$(document).ready(function() {
+    			$("a.services__cell_link").click(function() {
+    				$(this).css('background-color', '#ec4848');
+    			});
+    		});
+
+    		$(document).ready(function() {
+
+    			$('a.main-nav__link').smoothScroll();
+
+    			$('p.subnav a').click(function(event) {
+    				event.preventDefault();
+    				var link = this;
+    				$.smoothScroll({
+    					scrollTarget: link.hash
+    				});
+    			});
+
+    			$('#change-speed').on('click', function() {
+    				var $p1 = $('ul.mainnav a').first(),
+    				p1Opts = $p1.smoothScroll('options') || {};
+
+    				p1Opts.speed = p1Opts.speed === 1400 ? 400 : 1400;
+    				$p1.smoothScroll('options', p1Opts);
+    			});
+
+    			$('button.scrollsomething').click(function() {
+    				$.smoothScroll({
+    					scrollElement: $('div.scrollme'),
+    					scrollTarget: '#findme'
+    				});
+    				return false;
+    			});
+    			$('button.scrollhorz').click(function() {
+    				$.smoothScroll({
+    					direction: 'left',
+    					scrollElement: $('div.scrollme'),
+    					scrollTarget: '.horiz'
+    				});
+    				return false;
+    			});
+
     		});
     	</script>
     </body>
