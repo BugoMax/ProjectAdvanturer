@@ -97,14 +97,25 @@
 
 .main-sliderr__nextbutton .fa-angle-left:hover, .main-slider__prevbutton .fa-angle-right:hover {
 	background-color: #e4e5e5;
+	cursor: pointer;
+}
+
+.main-slider__items {
+	list-style-type: none;
 }
 
 .main-slider__content {
-	width: auto;
-	height: 100%;
+	display: table;
+	width: 100%;
+	float: left;
 }
 
-.main-slider__caption {
+.main-slider__conten-wrap {
+	display: table-cell;
+  text-align: center;
+}
+
+.main-slider__caption-1 {
 	@include ptsans;
 	position: relative;
 	height: 100px;
@@ -115,7 +126,21 @@
 	letter-spacing: 15px;
 }
 
-.main-slider__text {
+.main-slider__caption-2 {
+	@extend .main-slider__caption-1;
+	font-size: 4.9375rem;  // 79px / 16
+	letter-spacing: 4px;
+}
+
+.main-slider__caption-3 {
+	@extend .main-slider__caption-1;
+	margin-bottom: -80px;
+	font-size: 4.6875rem;  // 75px / 16
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+
+.main-slider__text-1 {
 	@include ptsans;
 	position: relative;
 	height: 60px;
@@ -126,16 +151,31 @@
   letter-spacing: 6px;
 }
 
+.main-slider__text-2 {
+	@extend .main-slider__text-1;
+	line-height: 500px;
+	font-size: 1.5rem;  // 24px / 16
+	letter-spacing: 4px;
+}
+
 .main-slider__link {
 	@include link_btn;
 	@include roboto;
 	display: block;
+	position: absolute;
+	top: 465px;
+	left: 45%;
 	width: 150px;
 	height: 50px;
-	margin: 115px auto;
+	margin: 0 auto;
 	padding-top: 15px;
 	text-align: center;
 	background-color: $pink;
 	color: #ffffff;
 	font-size: 1rem; // 16px / 16
+	transition: all ease-out 0.2s;
+}
+
+.main-slider__link:hover {
+	border-radius: 4px;
 }
