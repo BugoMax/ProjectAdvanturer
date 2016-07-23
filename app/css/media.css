@@ -171,10 +171,115 @@
     height: 500px; } }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 435px) {
+  .main-header {
+    width: auto; }
+  .main-header__logo {
+    width: auto;
+    padding-left: 12%; }
+  .offer {
+    display: none; }
+  .counter {
+    display: none; }
+  .work {
+    display: none; }
+  .clint {
+    display: none; }
+  .main-header__logo {
+    width: 100%;
+    margin-left: 10%; }
+  .header__main-nav {
+    width: 100%;
+    margin: 0 auto; }
+  .main-nav__link_active {
+    margin-left: 10px;
+    margin-right: 10px; }
+  .main-nav__link {
+    margin-right: 10px; }
+  .about__services {
+    display: block;
+    width: 90%; }
+  .services__cell_text {
+    height: auto; }
+  .about__progress {
+    display: none; }
+  .service__card {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%; }
+  .service__card_caption {
+    text-align: center; }
+  .service__card_tex {
+    text-align: center; }
+  .join {
+    height: auto; }
+  .customer {
+    height: auto;
+    margin-left: 2%; }
+  .reviews__card_img-wrap {
+    margin-left: 5%; }
+  .reviews__card_img-wrap_2 {
+    margin-left: 5%; }
+  .cutomer__reviews_card-text {
+    margin-left: 20%; }
+  .cutomer__reviews_wrap-checkboxes {
+    left: 40%;
+    margin-top: 580px; }
+  .customer:after {
+    margin-top: -130px; }
+  .main-footer__widgets_about {
+    width: 90%; }
+  .widgets__about_caption {
+    text-align: center; }
+  .widgets__about_social {
+    text-align: center; }
+  .main-footer__widgets_tags {
+    display: none; }
+  .main-footer__widgets_posts {
+    display: none; }
+  .main-footer__copyrights_text {
+    width: 30%;
+    margin-top: 10px; }
+  .main-footer__copyrights_social {
+    margin-top: -50px;
+    width: 60%; } }
+
 /* Custom, iPhone Retina */
-/*==========  Mobile First Method  ==========*/
-/* Custom, iPhone Retina */
-/* Extra Small Devices, Phones */
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-/* Large Devices, Wide Screens */
+@media only screen and (max-width: 375px) {
+  .main-header {
+    width: auto; }
+  .main-header__logo {
+    width: auto;
+    margin-left: 20%; }
+  .main-nav__search {
+    display: block;
+    float: right;
+    margin-right: 25px; }
+  .cutomer__reviews_wrap-checkboxes {
+    margin-top: 700px; } }
+
+@media only screen and (max-width: 320px) {
+  .main-header__logo {
+    margin-left: 6.5%; }
+  .header__main-nav {
+    margin-left: 0; }
+  .main-nav__link {
+    margin-right: 5px;
+    font-size: 0.75rem; }
+  .customer:after {
+    margin-top: -200px; }
+  .main-footer__subscribe_text {
+    margin-left: -30px; }
+  .main-footer__subsrribe_form {
+    width: 300px;
+    margin-left: -10px; }
+  .subsrribe__form_email {
+    width: 100%; }
+  .subsrribe__form_send {
+    left: 240px; }
+  .main-footer__copyrights {
+    height: 90px; }
+  .main-footer__copyrights_text {
+    margin-left: -15px; }
+  .main-footer__copyrights_social {
+    margin-top: -70px; } }
