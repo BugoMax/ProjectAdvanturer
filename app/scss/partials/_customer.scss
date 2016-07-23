@@ -78,6 +78,8 @@
 
 .cutomer__reviews_card-text {
 	@include roboto;
+	width: 100%;
+	margin-left: 160px;
 	color: $light-gray;
 	font-size: 1.125rem; // 18px / 16
 }
@@ -86,11 +88,6 @@
 	position: absolute;
 	left: 48%;
 	margin-top: 400px;
-}
-
-.showing{
-	opacity: 1;
-	z-index: 2;
 }
 
 .cutomer__reviews_wrap-checkbox {

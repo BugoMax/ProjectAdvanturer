@@ -3,6 +3,7 @@
 
 .about {
 	@include middle_position;
+	overflow: hidden;
 }
 
 .about:after {

@@ -160,7 +160,7 @@
 .main-footer__widgets_posts {
 	display: inline-block;
 	float: right;
-	width: 25.83333333333333%;  // 310px / 1200
+	max-width: 25.83333333333333%;  // 310px / 1200
 	margin-top: 40px;
 }
 
@@ -211,7 +211,7 @@
 	margin-top: 20px;
 }
 
-.copyrights__social_loink {
+.copyrights__social_link {
 	margin-right: 15px;
   color: $light-gray;
 }

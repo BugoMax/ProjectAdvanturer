@@ -111,7 +111,7 @@ $(document).ready(function() {
   }
     
   //controls
-  $('.main-sliderr__nextbutton').click(nextSlide);
-  $('.main-slider__prevbutton').click(prevSlide)
+  $('.main-slider__prevbutton').click(nextSlide);
+  $('.main-sliderr__nextbutton').click(prevSlide)
 });
 

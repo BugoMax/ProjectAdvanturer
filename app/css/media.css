@@ -1,295 +1,180 @@
-/*==========  Desktop First Method  ==========*/
-@media only screen and (max-width : 1600px) {
-	.choose_tour .card {
-		width: 530px;
-		height: 410px;
-	}
-}
-@media only screen and (max-width : 1500px) {
-	.choose_tour .card {
-		width: 490px;
-		height: 370px;
-	}
-}
-@media only screen and (max-width : 1400px) {
-	.choose_tour .card {
-		width: 430px;
-		height: 310px;
-	}
-}
-@media only screen and (max-width : 1366px) {
-	.choose_tour .card {
-		width: 450px;
-		height: 330px;
-	}
-}
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-	.top_header .fc {
-		margin-left: 100px;
-	}
-	.head_footer {
-		top: 440px;
-	}
-	.find_tour .find_tour-row,
-	.find_tour-row .city_name,
-	.find_tour .img-responsive {
-		width: 200px;
-		height: 200px;
-		overflow: hidden;
-		line-height: 200px;
-	}
-	.choose_tour .card {
-		width: 580px;
-	}
-	.news .news_hidden-first {
-		display: none;
-	}
-	.main_footer .footer_first-hidden {
-		display: none;
-	}
-}
+@media only screen and (max-width: 1300px) {
+  .main-header__logo {
+    margin-left: 20px;
+    width: 20%; }
+  .header__main-nav {
+    width: 50%;
+    margin-right: 20px; }
+  .main-slider__inner {
+    width: 90%; }
+  .about__progress {
+    margin-right: 60px; }
+  .offer {
+    width: 100%;
+    margin-left: 20px; }
+  .customer {
+    width: 100%;
+    margin-left: 20px; }
+  .counter__cards {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .meet {
+    width: 100%;
+    margin-left: 20px; }
+  .work {
+    width: 100%;
+    margin-left: 20px; }
+  .main-footer__widgets_posts {
+    width: 24%;
+    float: none; }
+  .main-footer__copyrights_social {
+    float: left;
+    margin-top: 20px;
+    margin-left: 55%; }
+  .main-footer__subscribe {
+    width: 100%;
+    margin-left: 20px; }
+  .main-footer__widgets {
+    width: 100%;
+    margin-left: 20px; }
+  .main-footer__copyrights_wrap {
+    width: 100%;
+    margin-left: 20px; } }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 1002px) {
-	.top_header .fc {
-		margin-left: 100px;
-	}
-	.choose_tour .card {
-		width: 580px;
-	}
-}
-
-@media only screen and (max-width : 992px) {
-	.top_header .fc {
-		margin-left: 100px;
-	}
-	.top_header .mail,
-	.top_header .time {
-		display: none;
-	}
-	.logo .logo_text {
-		display: none;
-	}
-	.find_tour .find_tour-row,
-	.find_tour-row .city_name,
-	.find_tour .img-responsive {
-		width: 180px;
-		height: 180px;
-		overflow: hidden;
-		line-height: 180px;
-		font-size: 19px;
-	}
-	.deal_hidden-block {
-		display: none;
-	}
-	.deal .card {
-		margin: 110px auto;
-	}
-	.choose_tour .card {
-		margin: 0 auto;
-	}
-	.news .card {
-		margin: 70px auto;
-	}
-	.find_tour .find_tour-row {
-		margin: 0 auto;
-	}
-	.main_footer .footer_second-hidden {
-		display: none;
-	}
-}
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-	.top_header .fc {
-		margin-left: 50px;
-	}
-	.logo .logo_text {
-		display: none;
-	}
-	.deal_hidden-block {
-		display: none;
-	}
-	.news .news_hidden-second {
-		display: none;
-	}
-}
-
-@media only screen and (max-width : 680px) {
-	.top_header .fc {
-		margin-left: 0px;
-	}
-	.top_header .navbar {
-		margin-left: 0px;
-	}
-	.head_footer {
-		top: 455px;
-	}
-}
-
-@media only screen and (max-width : 660px) {
-	.head_footer {
-		top: 440px;
-	}
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 600px) {
-	.head_footer {
-		top: 405px;
-	}
-}
-
-@media only screen and (max-width : 435px) {
-  body { width: 140.5%; }
-  .top_header .fc {
-  	margin-left: 30%;
-  }
-  .top_header .search {
-  	left: 30px;
-  }
-  .header_sect h2 {
-  	text-align: center;
-  }
-  .deal .card .btn-primary {
-		margin: 5px 23%;
-	}
-	.choose_tour .card-block .btn {
-		left: 40%;
-	}
-	.footer_support {
-		float: left;
-	}
-	.footer_second-hidden {
-    display: block !important;
-    position: absolute;
-    bottom: 228px;
-    right: 40px;
+@media only screen and (max-width: 1200px) {
+  .header__main-nav {
+    width: 55%; }
+  .main-slider__inner {
+    width: 100%; }
+  .about__services {
+    width: 40%;
+    margin-left: 20px; }
+  .about__progress {
+    margin-right: 130px; }
+  .service {
+    width: 100%;
+    margin: 60px auto; }
+  .service__card {
+    margin-left: 2%;
+    margin-right: 2%; }
+  .join__wrap {
+    width: 100%;
+    margin: 100px auto; }
+  .offer__card {
+    margin-right: 2.5%; }
+  .counter__card {
+    margin-right: 2%; }
+  .meet__card {
+    margin-right: 10%;
+    margin-left: 10%; }
+  .work__card {
+    margin-left: 5%;
+    margin-right: 5%; }
+  .clint {
+    width: 100%; }
+  .main-footer__copyrights_text {
+    display: inline-block;
+    float: left;
+    width: 45%; }
+  .main-footer__copyrights_social {
+    display: inline-block;
     float: right;
-	}
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 375px) {
-	.head_top {
-		height: 140px;
-	}
-	.top_header .phone_number {
-		padding-left: 30px;
-		margin-right: 0;
-		margin-left: -25px;
-	}
-	.top_header .tw,
-	.top_header .inst,
-	.top_header .yt,
-	.top_header .vb,
-	.top_header .search {
-		margin-left: 15px;
-	}
-	.top_header .search {
-		left: 33px;
-		position: relative;
-	}
-	.top_header .search .btn_search-form {
-		margin-left: 0;
-	}
-	.top_header .modal-content {
-		width: 100%; 
-		height: 500px;
-		margin: 100px 0;
-	}
-	.top_header .modal .modal_head {
-		margin-top: 15px;
-		text-align: center;
-		color: #606060;
-		font-weight: bold;
-		font-size: 32px; 
-	}
-	.logo .img_logo {
-		position: absolute;
-		top: 13px;
-		left: 0;
-	}
-	.navbar {
-		left: 60px;
-	}
-	.navbar .nav-pills li:nth-child(4) {
-		margin-left: -18px;
-	}
-	.header_sect {
-		margin-top: 60px;
-	}
-	.header_sect h2 {
-		text-align: center;
-	}
-	.header_sect p {
-		margin-left: 0;
-		text-align: center;
-	}
-	.head_footer {
-		min-height: 200px;
-		margin-top: 255px;
-	}
-	.find_tour h3 {
-		width: 100%;
-		margin-top: 50px;
-		text-align: center;
-	}
-	.deal .card {
-		width: 100%;
-	  min-height: 538px;
-	}
-	.deal .card .cost {
-		left: 21.5%;
-	}
-	.deal .card .btn-primary {
-		margin: 5px 16%;
-	}
-	.choose_tour .card {
-		width: 111.5%;
-		border-bottom: 1px solid white;
-	}
-	.choose_tour .card-block .btn {
-		left: 33%;
-	}
-	.banner .head_banner {
-		margin-top: 100px;
-		font-size: 55px;
-	}
-	.banner .slog {
-		font-size: 20px;
-		font-weight: normal;
-	}
-	.banner .banner_find {
-		margin-top: 80px;
-	}
-	html { overflow-x: hidden; }
-  body { overflow-x: hidden; }
-}
-
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
+    width: 45%;
+    margin-top: -30px; } }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+@media only screen and (max-width: 1100px) {
+  .header__main-nav {
+    width: 65%; }
+  .main-slider__inner {
+    margin-left: -55px; }
+  .about {
+    width: 100%;
+    margin: 0 auto; }
+  .about__progress {
+    float: none;
+    width: 540px;
+    margin: 0 auto; }
+  .about__services {
+    display: none; } }
 
-}
+@media only screen and (max-width: 992px) {
+  .header__main-nav {
+    width: 75%; }
+  .main-nav__link {
+    margin-right: 20px; }
+  .main-slider__caption-1, .main-slider__caption-2, .main-slider__caption-3 {
+    padding-left: 11%;
+    font-size: 5.125rem; }
+  .main-slider__caption-2 {
+    padding-left: 6%;
+    font-size: 3.125rem; }
+  .main-slider__caption-3 {
+    padding-left: 8%;
+    font-size: 2.8125rem; }
+  .main-slider__text-1 {
+    padding-right: 38%; }
+  .main-slider__text-2 {
+    padding-right: 38%;
+    font-size: 1rem; }
+  .meet {
+    display: none; }
+  .work__card {
+    width: 30%; }
+  .work__card_img-wrap {
+    max-width: 100%; }
+  .main-footer__widgets_about {
+    margin-right: 10%; }
+  .main-footer__widgets_features {
+    display: none; }
+  .main-footer__widgets_tags {
+    margin-right: 10%; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .main-header__logo {
+    display: block;
+    width: 100%;
+    margin-left: 25%; }
+  .header__main-nav {
+    width: 85%; }
+  .main-slider {
+    display: none; }
+  .service__card_caption {
+    font-size: 1.125rem; }
+  .service__card_text {
+    font-size: 1rem; }
+  .service__card_link {
+    width: 80%;
+    height: 45px; }
+  .offer:after {
+    margin-top: 300px; } }
+
+@media only screen and (max-width: 710px) {
+  .main-footer__subscribe_wrap {
+    height: 164px; }
+  .main-footer__subscribe_text {
+    float: none;
+    text-align: center; }
+  .main-footer__subsrribe_form {
+    float: none;
+    margin: 0 auto; } }
+
+@media only screen and (max-width: 680px) {
+  .main-header__logo {
+    margin-left: 15%; }
+  .header__main-nav {
+    width: 90%; }
+  .main-footer__widgets_wrap {
+    height: 500px; } }
+
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-}
